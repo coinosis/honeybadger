@@ -3,11 +3,19 @@
   <body>
     <h1>honeybadger</h1>
     <div>
-      contract: <input id="contract"/><br/>
-      number of attendees: <input id="attendees"/><br/>
-      <button onclick="window.register()">register</button>
-      <br />
-      <button onclick="window.vote()">vote</button>
+      <button onclick="window.connect()">connect</button>
+      <span id="proxyInfo"></span>
+      <br/>
+      contract: <input id="contractField" style="width: 500px;"/><br/>
+      attendees: <br/>
+      <button onclick="window.registerFor()">registerFor</button>
+      <button onclick="window.clapFor()">clapFor</button>
+      <br/>
+      <textarea
+        id="attendeesField"
+        style="width: 500px; height: 1000px"
+        ></textarea>
+      <br/>
     </div>
     <script src="main.js"></script>
   </body>
